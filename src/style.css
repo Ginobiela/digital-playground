@@ -1,4 +1,7 @@
 *{box-sizing:border-box}
+#cards article{position:relative}
+#cards h3 a::after{content:"";position:absolute;inset:0;z-index:2;cursor:pointer}
+#cards article:focus-within{outline:2px solid var(--accent);outline-offset:3px}
 .motion-toggle{display:block;margin:0 16px 12px;padding:7px 11px;border:1px solid #647e77;border-radius:4px;background:#101718;color:#99e4d9;font:12px "Segoe UI",sans-serif;cursor:pointer}.motion-toggle:focus-visible{outline:2px solid #99e4d9;outline-offset:3px}
 :root{color-scheme:dark;--bg:#0b1011;--fg:#f2f1e9;--muted:#aab6b6;--accent:#99e4d9;--line:#303a3b;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--fg);background:var(--bg);scroll-behavior:smooth}
 body,figure,h1,h2,h3,p{margin:0}a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
